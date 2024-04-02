@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .flexContainer {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .questionArea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60vh;
+    width: 80%;
+    border: 1px solid violet;
+    padding: 1vh;
+    margin: 0 auto;
+  }
+  h2 {
+    color: mediumvioletred;
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    text-align: center;
+  }
+  .question {
+    width: 80%;
+    background-color: mediumvioletred;
+    border-radius: 1.2rem;
+    color: white;
+    padding: 1vh;
+    margin: 3vh 0vh 3vh 0vh;
+    text-align: center;
+  }
+  .optionFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .option {
+    flex: 1 1 40%;
+    background-color: violet;
+    color: white;
+    margin: 1vh;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    border-radius: 1.2rem;
+  }
+  .option:hover {
+    background-color: white;
+    color: violet;
+  }
+  #result {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60vh;
+    width: 80%;
+    border: 1px solid violet;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid violet;
+    padding: 15px;
+  }
+  .nextButton {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid violet;
+    border-radius: 0.8rem;
+    justify-content: center;
+  }
+  .btn:hover {
+    background-color: violet;
+    color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .optionFlexContainer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      box-sizing: border-box;
+    }
+    .option {
+      flex: 1;
+      background-color: violet;
+      color: white;
+      margin: 1vh;
+      padding-top: 1.2vh;
+      padding-bottom: 1.2vh;
+      border-radius: 1rem;
+    }
+  }
